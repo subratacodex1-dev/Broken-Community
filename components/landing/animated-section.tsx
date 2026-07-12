@@ -1,14 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import type { ReactNode } from "react";
 
 export function AnimatedSection({ children, className, id }: { children: ReactNode; className?: string; id?: string }) {
-=======
-
-export function AnimatedSection({ children, className, id }: { children: React.ReactNode; className?: string; id?: string }) {
->>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
   return (
     <motion.section
       id={id}
