@@ -2,11 +2,15 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+>>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
 import { Button } from "@/components/ui/button";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+<<<<<<< HEAD
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -21,6 +25,11 @@ export function ThemeToggle() {
       onClick={() => setTheme(isLight ? "dark" : "light")}
       suppressHydrationWarning
     >
+=======
+  const isLight = theme === "light";
+  return (
+    <Button variant="outline" size="icon" aria-label="Toggle color theme" onClick={() => setTheme(isLight ? "dark" : "light")}>
+>>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
       {isLight ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
     </Button>
   );
