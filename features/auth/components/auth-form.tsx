@@ -60,11 +60,7 @@ export function AuthForm({ mode }: { mode: AuthMode }) {
           {mode === "register" || mode === "reset" ? <PasswordStrength value={watch("password") ?? ""} /> : null}
         </div>
       ) : null}
-<<<<<<< HEAD
       {needsOtp ? <OTPInput error={errors.otp?.message} {...register("otp")} /> : null}
-=======
-      {needsOtp ? <OTPInput error={errors.otp?.message} /> : null}
->>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
       <Button disabled={isPending} type="submit">{isPending ? <LoadingSpinner /> : null}{isPending ? "Processing..." : "Continue securely"}</Button>
       {mode === "login" || mode === "register" ? <div className="grid gap-3"><SocialLoginButton provider="google" /><SocialLoginButton provider="apple" /><SocialLoginButton provider="github" /></div> : null}
       {message ? <p className="rounded-2xl border border-primary/20 bg-primary/10 p-3 text-sm text-primary" role="status">{message}</p> : null}
