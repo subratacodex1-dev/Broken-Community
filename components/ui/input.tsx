@@ -1,6 +1,13 @@
+<<<<<<< HEAD
+import type { InputHTMLAttributes } from "react";
+import { cn } from "@/lib/utils";
+
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+=======
 import { cn } from "@/lib/utils";
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+>>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
   label: string;
   error?: string;
 }

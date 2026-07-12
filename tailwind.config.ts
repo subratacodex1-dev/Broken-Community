@@ -1,4 +1,8 @@
 import type { Config } from "tailwindcss";
+<<<<<<< HEAD
+import tailwindcssAnimate from "tailwindcss-animate";
+=======
+>>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
 
 const config: Config = {
   darkMode: ["class"],
@@ -19,7 +23,11 @@ const config: Config = {
       boxShadow: { glow: "0 24px 80px hsl(var(--primary) / 0.18)" }
     }
   },
+<<<<<<< HEAD
+  plugins: [tailwindcssAnimate]
+=======
   plugins: [require("tailwindcss-animate")]
+>>>>>>> efe86ce617b4656305b9130a3aaf0bc52436adba
 };
 
 export default config;
