@@ -10,5 +10,8 @@ export const authRoutes = [
   { label: "Session Management", href: "/auth/sessions", description: "Review active mock sessions." },
   { label: "Login History", href: "/auth/login-history", description: "Audit recent access attempts." },
   { label: "Trusted Devices", href: "/auth/trusted-devices", description: "Manage trusted mock devices." },
-  { label: "Security Settings", href: "/auth/security-settings", description: "Central verification and recovery controls." }
+  { label: "Security Settings", href: "/auth/security-settings", description: "Central verification and recovery controls." },
+  { label: "User Profile", href: "/auth/profile", description: "Manage username, display name, bio, links, interests, skills, privacy, and notifications." },
+  { label: "User Settings", href: "/auth/settings", description: "Control dark and light mode, language, accessibility, theme color, font size, security, and devices." },
+  { label: "Admin Panel", href: "/auth/admin", description: "Review admin authentication, moderator roles, and the permission system." }
 ] as const;
